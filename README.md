@@ -21,5 +21,21 @@ This project uses the YOLOv5 object detection model to identify three classes: r
 
 2. **Install Dependencies**
     ```bash
+    cd yolov5
     pip install -r requirements.txt
     ```
+3. **Run the Django App**
+   ```
+   cd ..
+   python manage.py runserver
+   ```
+
+
+
+## Acknowledgements
+
+**YOLOv5**
+**EasyOCR**
+   
+   
+   
