@@ -1,0 +1,64 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: linear-gradient(to right,red, blue);
+            
+            background-size: cover;
+            font-family: sans-serif;
+            color: #fff;
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 50px;
+            color: #000;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-bottom: 100px;
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 20px;
+        }
+    
+        input[type="submit"] {
+            background-color: #14e95b;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prediction</title>
+</head>
+<body>
+    <p>
+        <form action="delete" method="post">
+        <h1>Detections</h1>
+        <img src="{{ img_pth }}" alt="" height="400" width="600">
+        <p>
+            {{platereading}}
+        </p>
+        <p>{{results}}</p>
+
+    </form>
+</p>
+</body>
+</html>
