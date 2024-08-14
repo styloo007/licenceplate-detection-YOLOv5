@@ -34,8 +34,7 @@ This project uses the YOLOv5 object detection model to identify three classes: r
 
 ## Acknowledgements
 
-**YOLOv5**
-**EasyOCR**
+**YOLOv5 and EasyOCR**
    
    
    
